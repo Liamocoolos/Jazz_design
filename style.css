@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* /////////////	TYPOGRAPHIE		///////////// */
+body {
+	  font-family: "Roboto", sans-serif;
+}
+
+
+/* Font Scale */
+:root{
+--fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+--fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+--fs-md: clamp(1.25rem, 0.61vi + 1.09rem, 1.58rem);
+--fs-lg: clamp(1.56rem, 1.01vi + 1.3rem, 2.11rem);
+--fs-xl: clamp(1.95rem, 1.58vi + 1.55rem, 2.81rem);
+--fs-xxl: clamp(2.44rem, 2.41vi + 1.83rem, 3.75rem);
+--fs-xxxl: clamp(3.05rem, 3.58vi + 2.13rem, 5rem);
+}
+/* https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=410&minRatio=1.25&maxFontSize=19&maxWidth=1280&maxRatio=1.333&steps=sm%2Cbase%2Cmd%2Clg%2Cxl%2Cxxl%2Cxxxl&baseStep=base&prefix=fs&useContainerWidth=false&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1280 */
+
+body{font-size: var(--fs-base);}
+
+h1 {font-size: var(--fs-xxxl);}
+
+/* Interligne */
+
+p{line-height: 1.25;}
+
+/* interlettrage */
+
+p{letter-spacing: 0.02em;}
+h1{letter-spacing: -0.01em;}
+
+/* COULEUR */
+:root{
+	--jazz-bleu: hsl(181, 95%, 40%);
+	--jazz-bleu-dark: hsl(181, 95%, 20%)
+}
+h1{color: var(--jazz-bleu);}
+p{color: var(--jazz-bleu-dark);}
